@@ -10,15 +10,16 @@
 
   <header>
     <div class="logo">
-      <a href="/" aria-label="Ir para a página inicial">
-        <img src="" alt="Biosvit — Clínica Veterinária">
+      <a href="#inicio" aria-label="Ir para a página inicial">
+        <img src="img/logo.png" alt="Biosvit — Clínica Veterinária">
       </a>
     </div>
-    <nav aria-label="Menu principal">
+
+    <nav aria-label="menu-principal">
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#equipe">Equipe</a></li>
         <li><a href="#depoimentos">Depoimentos</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -29,21 +30,17 @@
 
   <section id="inicio" aria-labelledby="hero-title">
     <div class="hero-content">
+      <img src="img/profissionais.png"  class="hero-image" alt="profissionais">
       <h1 id="hero-title">Clínica Veterinária Biosvit</h1>
       <p>Atendimento completo para cães e gatos — consultas, vacinas, cirurgia e hospedagem.</p>
       <p><strong>Mais de 5000+ avaliações positivas</strong></p>
-      <p>
-        <a href="#contato">Agende uma consulta</a>
-        <a href="#servicos">Nossos serviços</a>
-      </p>
+      <div class="cta-buttons">
+        <a href="#contato" class="btn-primary">Agende uma consulta</a>
+        <a href="#servicos" class="btn-secondary">Nossos serviços</a>
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="" alt="">
-    </div>
-  </section>
 
-
-  <section aria-label="Destaques">
+  <section aria-label="Nosso diferenciais" class="destaques">
     <ul>
       <li>Horário: 08:00 — 20:00</li>
       <li>Atendimento de emergência</li>
@@ -51,8 +48,8 @@
     </ul>
   </section>
 
-  <section id="sobre" aria-labelledby="sobre-title">
-    <h2 id="sobre-title">Por que escolher a Biosvit?</h2>
+  <section id="sobre" aria-labelledby="sobre-content">
+    <h2>Por que escolher a Biosvit?</h2>
     <p>Equipe especializada, equipamentos modernos e atendimento humanizado.</p>
     <ul>
       <li>30+ profissionais</li>
@@ -104,7 +101,7 @@
         <p>Calendário vacinal completo para filhotes e adultos.</p>
       </article>
     </div>
-    <p><strong>Mais de 50 serviços</strong></p>
+    <p class="servicos-cta"><strong>Mais de 50 serviços</strong></p>
   </section>
 
 
@@ -120,7 +117,7 @@
         </ul>
       </div>
       <div class="team-photo">
-        <img src=" " alt=" ">
+        <img src="img/team.png" alt="Equipe de veterinários">
       </div>
     </div>
   </section>
@@ -131,12 +128,18 @@
     <ul class="testimonials">
       <li>
         <blockquote>
+          <div class="team-photo">
+          <img src="img/depoimento.jpg" alt="Maria">
           <p>Excelente atendimento — a equipe cuidou muito bem do meu cãozinho.</p>
           <footer>— Maria</footer>
         </blockquote>
       </li>
+    </div>
+
       <li>
         <blockquote>
+          <div class="team-photo">
+          <img src="img/ivan.jpg" alt="Maria">
           <p>Profissionais competentes e atenciosos. Recomendo!</p>
           <footer>— Ivan</footer>
         </blockquote>
@@ -170,6 +173,7 @@
           <option>Vacinação</option>
           <option>Cirurgia</option>
           <option>Hospedagem</option>
+          <option>Outro serviço</option>
         </select>
       </div>
 
@@ -222,5 +226,10 @@
 
     <div class="mapa">
       <h4>Nossa localização</h4>
+      <div class="team-photo">
+          <img src="img/mapa.jpg" alt="Maria">
   
-      <div class="map-placeholder">MAPA (iframe aqui)</div>
+</div>
+</footer>
+</body>
+</html>

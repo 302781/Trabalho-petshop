@@ -1,0 +1,343 @@
+/* ==========================================================================
+   Configurações Globais e Variáveis
+   ========================================================================== */
+
+:root {
+    /* Cores Pricipais */
+    --primary-color: #ffffff;      /* Branco */
+    --secondary-color: #BDA2A2;     /* Cinza/Rosa Claro */
+    --background-color: #FBBE9A;    /* Laranja Claro */
+    --yellow-color: #969696;        /* Cinza Escuro */
+    --light-color: #FAF5C8;         /* Amarelo Claro */
+    --text-dark: #333333;           /* Cinza Escuro para texto */
+    --text-light: #666666;          /* Cinza para texto secundário */
+    
+    /* Fonte - A fonte 'SUSE Mono' pode não ser padrão em todos os sistemas.
+       É recomendável usar uma fonte web ou uma fallback mais comum. */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Reset básico e configurações iniciais */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--yellow-color); /* Usando a cor cinza para links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* ==========================================================================
+   Header e Navegação
+   ========================================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ==========================================================================
+   Seções de Conteúdo
+   ========================================================================== */
+
+main section {
+    padding: 6rem 10%;
+}
+
+/* Seção de Início (Hero) */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os botões de chamada para ação (CTA) */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #a78e8e;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Seção de Destaques */
+.destaques ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 10%;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.destaques li {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.destaques li img {
+    height: 24px;
+}
+
+/* Seção "Sobre" */
+#sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--background-color);
+}
+
+#sobre h2, #servicos h2, #equipe h2, #depoimentos h2, #faq h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+/* Seção "Serviços" */
+#servicos {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.servico-card {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção "Equipe" */
+#equipe {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Seção "Depoimentos" */
+#depoimentos {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.testimonials li {
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção "Contato" */
+#contato {
+    padding: 6rem 10%;
+    background-color: var(--yellow-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#contato form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Seção "FAQ" */
+#faq {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    background-color: var(--yellow-color);
+    color: var(--primary-color);
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* ==========================================================================
+   Responsividade (Layout Vertical para Mobile)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Ajustes para telas pequenas */
+    body {
+        padding-top: 50px;
+    }
+    
+    main section,
+    .destaques ul {
+        padding: 4rem 5%;
+    }
+
+    /* Empilha elementos usando flex-direction: column */
+    header,
+    #inicio,
+    #sobre,
+    .team,
+    .testimonials,
+    footer,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #inicio {
+        flex-direction: column-reverse; /* Inverte a ordem para a imagem ficar no topo */
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .testimonials {
+        gap: 1.5rem;
+    }
+
+    #sobre ul {
+        flex-direction: row; /* Mantém os ícones lado a lado, mas permite quebras */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
