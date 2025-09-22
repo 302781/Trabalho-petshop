@@ -2,14 +2,12 @@
   --primary-color: #ffffff;
   --secondary-color: #BDA2A2;
   --background-color: #FBBE9A;
-  --yellow-color: #969696;
-  --light-color: #FAF5C8;
+  --light-color: #faf5ce;
   --text-dark: #333333;
   --text-light: #666666;
   --font-family: 'Arial', sans-serif;
 }
 
-/* --- Estilos Globais e Reset --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +20,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--light-color);
+  background-color: var(--primary-color);
   color: var(--text-dark);
   line-height: 1.6;
 }
@@ -69,7 +67,7 @@ a {
 
 /* --- Header e Navegação --- */
 header {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -169,7 +167,7 @@ nav a:hover {
 
 /* --- Seção de Destaques --- */
 .destaques {
-  background-color: var(--yellow-color);
+  background-color: var(--text-dark);
   color: var(--primary-color);
 }
 
@@ -210,7 +208,7 @@ nav a:hover {
 /* --- Seção de Serviços --- */
 #servicos {
   text-align: center;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
 .servicos-grid {
@@ -221,7 +219,7 @@ nav a:hover {
 }
 
 .servico-card {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -231,7 +229,7 @@ nav a:hover {
 
 .servico-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--text-dark);
 }
 
 .servicos-cta {
@@ -277,7 +275,7 @@ nav a:hover {
 }
 
 #depoimentos h2 {
-  color: var(--primary-color);
+  color: var(--text-dark);
 }
 
 .testimonials {
@@ -293,7 +291,7 @@ nav a:hover {
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  background-color: var(--primary-color);
+  background-color: var(--text-dark);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -303,7 +301,7 @@ blockquote p {
   font-style: italic;
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: var(--text-dark);
+  color: var(--light-color);
 }
 
 footer {
@@ -353,7 +351,7 @@ form button {
   padding: 1rem;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   color: var(--text-dark);
   border: none;
   border-radius: 5px;
@@ -362,12 +360,12 @@ form button {
 }
 
 form button:hover {
-  background-color: #f7a07c;
+  background-color: var(--light-color);
 }
 
 /* --- Seção FAQ --- */
 #faq {
-  background-color: var(--yellow-color);
+  background-color: var(--);
 }
 
 #faq h2 {
@@ -424,7 +422,7 @@ footer p {
 }
 
 .menu-footer a:hover {
-  color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .mapa img {
