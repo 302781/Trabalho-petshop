@@ -4,7 +4,7 @@
 
 Bem-vindo ao **PetShop**! 🐶🐱🐰
 Este é um site desenvolvido com **HTML + CSS** para apresentar uma clínica/loja pet de forma moderna, fofa e funcional ✨.
-Aqui, você encontra informações sobre os serviços, equipe, localização e até depoimentos dos clientes! ❤️
+Aqui, você encontra informações sobre-nos, os serviços, equipe, contatos e localização e até depoimentos dos clientes! ❤️
 
 ---
 
