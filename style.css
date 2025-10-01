@@ -503,7 +503,7 @@ footer p {
     text-align: center;
   }
 }
-
+/*tablet*/
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -513,7 +513,7 @@ footer p {
   nav ul {
     flex-direction: column;
     margin-top: 1rem;
-  }
+  } 
   
   #inicio {
     padding: 2rem 0.5rem;
