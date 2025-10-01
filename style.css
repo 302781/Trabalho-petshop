@@ -432,6 +432,43 @@ footer p {
 }
 
 /* --- Media Queries (Responsividade) --- */
+/*desktop*/
+@media (max-width: 769px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  #inicio {
+    padding: 6rem 3rem;
+  }
+  
+  #inicio h1 {
+    font-size: 3.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  #equipe .team {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+/*celular*/
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -465,4 +502,42 @@ footer p {
     align-items: center;
     text-align: center;
   }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  #inicio {
+    padding: 2rem 0.5rem;
+  }
+  
+  #inicio h1 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  #equipe .team {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+   .desktop-only-element {
+        display: none;
+    }
 }
